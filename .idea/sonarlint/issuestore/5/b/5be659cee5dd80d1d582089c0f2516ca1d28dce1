@@ -1,0 +1,36 @@
+
+
+java:S11927"KDefine a constant instead of duplicating this literal "isCustomer" 3 times.(ñ¯ÃÙ8¡•…Ëó1J$671bf301-672a-416b-a2f5-f4ee7511a614
+“
+java:S1192:"PDefine a constant instead of duplicating this literal "userInformation" 3 times.(ÉÔÎ8¡•…Ëó1J$0cf1cb98-b23a-430a-81d2-db055af73bb3
+p
+java:S1604;"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8¡•…Ëó1J$26b838ef-56f5-4afb-8761-0f26f7c8f1c0
+p
+java:S1604@"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8¡•…Ëó1J$a13f9aea-b82d-4ce3-a1a0-31bd79a76df1
+k
+java:S1604*"(Make this anonymous inner class a lambda(³Ö×•8¡•…Ëó1J$36083cf0-a8b8-4c93-90c4-7045246a3ab5
+p
+java:S1604k"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8¡•…Ëó1J$9fe25fe7-c495-4a09-88cd-f3a9cf400e83
+p
+java:S1604p"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8¡•…Ëó1J$655298ae-27cf-4b54-80c3-4d7f0795929c
+k
+java:S1604Y"(Make this anonymous inner class a lambda(³Ö×•8¦•…Ëó1J$08d4ad05-6b37-4c64-906f-1bc9187d8be8
+q
+java:S1604”"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8¦•…Ëó1J$bf7615c2-5bf3-449c-8c7a-dd2ee150414b
+l
+java:S1604Š"(Make this anonymous inner class a lambda(³Ö×•8¦•…Ëó1J$df20434e-8bb1-42bf-95ba-8b3424e7ae50
+
+java:S1854"8Remove this useless assignment to local variable "user".(©Í”äıÿÿÿÿ8Ñ•…Ëó1J$c25c70b9-350a-42b2-8700-35da8640a252
+r
+java:S1481")Remove this unused "user" local variable.(©Í”äıÿÿÿÿ8Ô•…Ëó1J$a2edbddb-35e7-4a5a-b81b-5ef440d96232
+v
+java:S1128".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8Ô•…Ëó1J$f4d048a2-a404-4b5f-9fb8-aa45528f9f99
+ƒ
+java:S1128
+";Remove this unused import 'androidx.annotation.MainThread'.(ÚÔíêÿÿÿÿÿ8Ô•…Ëó1J$3c8b2543-4d1d-41f6-ad30-24fcea5d4f3b
+
+java:S1128">Remove this unused import 'androidx.navigation.NavDirections'.(Á¥±8Ô•…Ëó1J$4634b3c5-f7fc-4b6f-a362-e14da61b78d1
+ƒ
+java:S1128";Remove this unused import 'androidx.navigation.Navigation'.(ÄíÚÀÿÿÿÿÿ8Ô•…Ëó1J$4f1ad463-29c7-4117-85bd-17e844c528df
+v
+java:S1068!".Remove this unused "isCustomer" private field.(Îïö©şÿÿÿÿ8Ô•…Ëó1J$89493bb7-becb-4fba-ab87-d6e9381e1c59

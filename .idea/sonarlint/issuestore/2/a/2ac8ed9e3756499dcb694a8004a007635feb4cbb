@@ -1,0 +1,13 @@
+
+p
+java:S16047"(Make this anonymous inner class a lambda(’ãşìøÿÿÿÿ8ˆÏÆÊó1J$778c7faa-27ed-4f93-b92e-91dd9807bdd8
+k
+java:S1604A"(Make this anonymous inner class a lambda(Á”Å8ˆÏÆÊó1J$9054e74c-8222-4fdc-850e-e23e498335c5
+k
+java:S1185$"(Remove this method to simply inherit it.(ßìê¯8«ÏÆÊó1J$061246c5-b693-4368-88e4-cb84001c4f17
+Ä
+java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ˆ¼ÑÜ8Ï°ÇÊó1J$b7f821d2-b010-4c56-84bb-c1773f70b1c3
+r
+java:S1128"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8ÒÚƒËó1J$2bba78b3-a46d-419d-af14-0df2374c9e16
+u
+java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8ÒÚƒËó1J$5b6ac303-566a-4dae-8d58-6ed42e888ebb
