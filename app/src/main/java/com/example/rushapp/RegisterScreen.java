@@ -17,6 +17,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 import com.example.rushapp.databinding.FragmentRegisterScreenBinding;
@@ -52,7 +55,8 @@ public class RegisterScreen extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
+        Animation bottomAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.bottom_animation);
+        binding.contentLinearLayoutRegister.setAnimation(bottomAnim);
 
         binding.registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,11 +75,11 @@ public class RegisterScreen extends Fragment {
                         DBOperations dbo=new DBOperations();
 
                         if(binding.checkbox.isChecked()){
-                            Provider provider = new Provider(registerMail, registerName,registerPass,registerJob);
+                            Provider provider = new Provider(registerMail, registerName,registerPass,registerJob,false);
                             dbo.registerProvider(provider, getContext(), new RegistrationCallback() {
                                 @Override
                                 public void onRegistrationSuccess() {
-                                    NavDirections action = RegisterScreenDirections.actionRegisterScreenToProviderHomePage();
+                                    NavDirections action = RegisterScreenDirections.actionRegisterScreenToProviderPage();
                                     Navigation.findNavController(view).navigate(action);
                                 }
 
@@ -85,11 +89,11 @@ public class RegisterScreen extends Fragment {
                                 }
                             });
                         }else{
-                            Customer customer = new Customer(registerMail,registerName,registerPass,registerJob);
+                            Customer customer = new Customer(registerMail,registerName,registerPass,registerJob,true);
                             dbo.registerCustomer(customer, getContext(), new RegistrationCallback() {
                                 @Override
                                 public void onRegistrationSuccess() {
-                                    NavDirections action = RegisterScreenDirections.actionRegisterScreenToCustomerHomePage();
+                                    NavDirections action = RegisterScreenDirections.actionRegisterScreenToCustomerPage();
                                     Navigation.findNavController(view).navigate(action);
                                 }
 

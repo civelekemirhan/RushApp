@@ -13,16 +13,19 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import com.example.rushapp.databinding.FragmentSplashScreenBinding;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class SplashScreen extends Fragment {
 
     FragmentSplashScreenBinding binding;
-
+    private FirebaseAuth mAuth;
     public SplashScreen() {
         // Required empty public constructor
     }
@@ -32,6 +35,9 @@ public class SplashScreen extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        mAuth = FirebaseAuth.getInstance();
 
     }
 
@@ -52,16 +58,42 @@ public class SplashScreen extends Fragment {
         binding.appLogo.setAnimation(topAnim);
         binding.appName.setAnimation(bottomAnim);
 
-       new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                NavDirections action=SplashScreenDirections.actionSplashScreenToLoginScreen2();
-                Navigation.findNavController(view).navigate(action);
+
+                if(mAuth.getCurrentUser()!=null){
+
+                    DBOperations dbo=new DBOperations();
+
+                    dbo.getUserCustomerInformation(new OnUserIsCustomerInformationCallback() {
+                        @Override
+                        public void onComplete(boolean isCustomer) {
+                            if(isCustomer){
+                                NavDirections action = SplashScreenDirections.actionSplashScreenToCustomerPage();
+                                Navigation.findNavController(view).navigate(action);
+                            }else{
+                                NavDirections action = SplashScreenDirections.actionSplashScreenToProviderPage();
+                                Navigation.findNavController(view).navigate(action);
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Exception e) {
+
+                        }
+                    });
+                }else{
+                    NavDirections action = SplashScreenDirections.actionSplashScreenToLoginScreen2();
+                    Navigation.findNavController(view).navigate(action);
+
+                }
 
 
             }
-        },3000);
+        }, 3000);
 
 
     }
+
 }

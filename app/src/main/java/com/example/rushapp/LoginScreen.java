@@ -16,6 +16,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
 import com.example.rushapp.databinding.FragmentLoginScreenBinding;
@@ -34,7 +37,10 @@ public class LoginScreen extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
     }
 
@@ -51,7 +57,8 @@ public class LoginScreen extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        Animation bottomAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.bottom_animation);
+        binding.contentLinearLayout.setAnimation(bottomAnim);
         binding.goRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,8 +70,11 @@ public class LoginScreen extends Fragment {
 
 
         binding.loginButton.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View v) {
+
                 String loginMail=binding.textInputEditTextMail.getText().toString();
                 String loginPass=binding.textInputEditTextPass.getText().toString();
 
@@ -76,12 +86,12 @@ public class LoginScreen extends Fragment {
                     dbo.loginSystem(loginMail,loginPass, getContext(), new LoginCallback() {
                         @Override
                         public void onLoginSuccess(boolean isCustomer) {
-
+                            binding.loginButton.setEnabled(false);
                             if(isCustomer){
-                                NavDirections action = LoginScreenDirections.actionLoginScreenToCustomerHomePage();
+                                NavDirections action = LoginScreenDirections.actionLoginScreenToCustomerPage();
                                 Navigation.findNavController(view).navigate(action);
                             }else{
-                                NavDirections action=LoginScreenDirections.actionLoginScreenToProviderHomePage();
+                                NavDirections action=LoginScreenDirections.actionLoginScreenToProviderPage();
                                 Navigation.findNavController(view).navigate(action);
                             }
 

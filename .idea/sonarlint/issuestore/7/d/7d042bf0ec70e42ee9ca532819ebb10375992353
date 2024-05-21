@@ -1,0 +1,17 @@
+
+¬
+java:S1319"iThe type of "arrayList" should be an interface such as "List" rather than the implementation "ArrayList".(³·Â¢8Ú³İ·ù1J$e01f2951-4c3b-4d77-bdd7-29c1ff732dc5
+k
+java:S16048"(Make this anonymous inner class a lambda(êÂ…Ñ8Û³İ·ù1J$373b5b7e-a7c9-4ea9-b663-3fcf0c3e9332
+j
+java:S1604A"(Make this anonymous inner class a lambda(÷Â×W8Û³İ·ù1J$7088c204-8179-4a40-a234-241b5746932b
+p
+java:S1604L"(Make this anonymous inner class a lambda(Êôûşÿÿÿÿ8Û³İ·ù1J$39678074-189e-4287-8cdd-b2794979296c
+u
+java:S1128"3Remove this unused import 'android.content.Intent'.(³ğ‹G8õï·ù1J$750ecf3e-d250-4015-8c6b-9882a70eadb0
+t
+java:S1128",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8õï·ù1J$64f841c8-305a-4c83-8d02-271cba636bd8
+›
+java:S1128"XRemove this unused import 'com.example.rushapp.databinding.FragmentCustomerPageBinding'.(ã§íÛ8öï·ù1J$7bdd726d-7bc5-46f2-aaa0-91096f4de4d8
+¢
+java:S1128"_Remove this unused import 'com.example.rushapp.databinding.FragmentUniversalHomeScreenBinding'.(šâ¿ü8öï·ù1J$92725462-2d95-4a56-a9a5-36bb07da1456

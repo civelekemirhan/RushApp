@@ -5,37 +5,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/appColor"
     tools:context=".SplashScreen">
 
-
     <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="79dp"
-        android:src="@drawable/applogo"
-        app:layout_constraintBottom_toTopOf="@+id/appName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/person"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#BF000000"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="79dp"
+            android:src="@drawable/applogo"
+            app:layout_constraintBottom_toTopOf="@+id/appName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.238" />
 
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="129dp"
-        android:fontFamily="@font/bangers"
-        android:text="RUSH"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="70sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="129dp"
+            android:fontFamily="@font/bangers"
+            android:text="RUSH"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="70sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

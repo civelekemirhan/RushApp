@@ -12,27 +12,25 @@ import android.view.animation.AnimationUtils;
 import android.widget.ProgressBar;
 
 import com.example.rushapp.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
+    public ActivityMainBinding binding;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         binding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
 
-        Window window = MainActivity.this.getWindow();
 
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
-        window.setStatusBarColor(ContextCompat.getColor(MainActivity.this,R.color.appColor));
-        window.setNavigationBarColor(ContextCompat.getColor(MainActivity.this,R.color.appColor));
 
 
 

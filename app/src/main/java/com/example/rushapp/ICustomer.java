@@ -1,10 +1,16 @@
 package com.example.rushapp;
 
+import android.content.Context;
+
+import com.example.rushapp.databinding.FragmentUniversalSavesScreenBinding;
+
+import java.util.List;
+
 public interface ICustomer {
 
 
-    public void searchService(); //filtreleme
-    public void receivedServiceHistory();//Alınan hizmet geçmişi
+
+
 
 
 }

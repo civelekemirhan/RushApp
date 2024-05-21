@@ -1,0 +1,23 @@
+
+p
+java:S1604M"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8¬İÆêø1J$e2cd2354-62c7-48ed-83b7-262ee60836d5
+p
+java:S1604g"(Make this anonymous inner class a lambda(¤ıµåùÿÿÿÿ8­İÆêø1J$32163933-c0da-49f0-98a9-cb6969ada2a1
+p
+java:S1604o"(Make this anonymous inner class a lambda(Œ¾Ê©úÿÿÿÿ8­İÆêø1J$7105d175-af19-4d88-97bc-439c839f1c1d
+™
+java:S1450("QRemove the "db" field and declare it as a local variable in the relevant methods.(î–æ‡üÿÿÿÿ8ÆİÆêø1J$bc46ed8f-0d04-4154-965e-84812144ab5f
+—
+java:S1450&"TRemove the "mAuth" field and declare it as a local variable in the relevant methods.(ªĞ”’8ÇİÆêø1J$bc8eff90-faad-44ed-af57-80b53b976360
+k
+java:S11854"(Remove this method to simply inherit it.(ßìê¯8ÍİÆêø1J$a6c417c3-4a1b-4cbb-b981-40eacc575e3b
+o
+java:S1125T"'Remove the unnecessary boolean literal.(ÀãÒÛûÿÿÿÿ8ÕİÆêø1J$48f26fbe-0480-4684-ace0-cb865bf75ce0
+t
+java:S1128",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8ÙİÆêø1J$abbb8cfe-6f74-494b-97a3-544bd1d87304
+•
+java:S1128"MRemove this unused import 'androidx.recyclerview.widget.LinearLayoutManager'.(ôœ¹ºıÿÿÿÿ8ÙİÆêø1J$dd72c5d9-6db9-4fad-9361-a484a5836e6f
+r
+java:S1128"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8ÙİÆêø1J$fff77baa-a825-4bf2-aed1-01a6c52c0141
+q
+java:S1128".Remove this unused import 'android.view.Menu'.(£¯Ò…8ÙİÆêø1J$ac92e659-53b5-491d-b59c-00a0cda6051f

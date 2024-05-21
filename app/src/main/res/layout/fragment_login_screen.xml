@@ -5,17 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/appColor"
+
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".LoginScreen">
+    <ImageView
+        android:src="@drawable/person"
+        android:id="@+id/im1"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+
+        android:layout_width="match_parent"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#BF000000"
+    android:orientation="vertical">
 
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/contentLinearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_margin="25dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +47,7 @@
             android:text="HOŞGELDİNİZ"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="35sp"
+            android:textSize="40sp"
 
             android:textStyle="bold" />
 
@@ -45,7 +59,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:hint="Email giriniz"
-
+            app:boxStrokeColor="@color/white"
+            app:cursorColor="@color/white"
+            app:hintTextColor="@color/white"
             android:textColorHint="@color/white"
             app:endIconMode="clear_text"
             app:endIconTint="@color/white"
@@ -57,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="206dp"
-
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -71,6 +87,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:hint="Şifre giriniz"
+            app:boxStrokeColor="@color/white"
+            app:cursorColor="@color/white"
+            app:hintTextColor="@color/white"
             android:textColorHint="@color/white"
             app:endIconMode="password_toggle"
             app:endIconTint="@color/white"
@@ -83,6 +102,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="206dp"
                 android:ellipsize="none"
+                android:textColor="@color/white"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +126,8 @@
                 android:background="@drawable/custom_registerbutton"
                 android:text="KAYIT OL"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginButton"
@@ -115,7 +136,8 @@
                 android:background="@drawable/custom_button"
                 android:text="GİRİŞ YAP"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:textStyle="bold"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <TextView
@@ -131,6 +153,8 @@
 
 
     </LinearLayout>
+</LinearLayout>
+
 
 
 

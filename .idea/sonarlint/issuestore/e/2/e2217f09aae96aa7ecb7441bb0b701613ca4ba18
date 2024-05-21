@@ -1,0 +1,15 @@
+
+p
+java:S1604K"(Make this anonymous inner class a lambda(Œ¾Ê©úÿÿÿÿ8õ¬Ã”ø1J$74be635d-9e82-4c96-bad4-5bee35b0cf73
+z
+java:S1128"7Remove this unused import 'android.app.ProgressDialog'.(¶ÍÔÓ8Ê…µ–ø1J$36d239af-dec7-4771-8c76-1393661b0df9
+{
+java:S1128"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ8Ê…µ–ø1J$cd67aefe-bdee-4709-9322-ca050a28a835
+r
+java:S1128"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8Ê…µ–ø1J$2cf49cea-4507-4d64-9c76-d708f8656ab9
+u
+java:S1128"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Ê…µ–ø1J$9edb2cb1-575b-4d3b-ab09-03a45ad258b7
+q
+java:S1128".Remove this unused import 'android.view.Menu'.(£¯Ò…8Ê…µ–ø1J$e340185a-d67f-4ea8-9447-909f1177922e
+
+java:S1128"HRemove this unused import 'com.google.firebase.storage.FirebaseStorage'.(Ê¾ğíıÿÿÿÿ8Ê…µ–ø1J$a4da2021-62db-428c-82d5-5832ebf139b3
