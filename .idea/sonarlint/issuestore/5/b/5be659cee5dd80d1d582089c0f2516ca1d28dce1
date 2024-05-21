@@ -1,115 +1,101 @@
 
 •
-java:S1192C"MDefine a constant instead of duplicating this literal "profilePhoto" 6 times.(şá´ÿıÿÿÿÿ8„€Çºù1J$8f1f97f8-56e7-4b9f-a61d-edbf735b7232
+java:S1192D"MDefine a constant instead of duplicating this literal "profilePhoto" 6 times.(şá´ÿıÿÿÿÿ8„€Çºù1J$12655e93-12b5-4579-a99f-3c64028347fe
 “
-java:S1192G"PDefine a constant instead of duplicating this literal "userInformation" 8 times.(ÉÔÎ8…€Çºù1J$f530ac59-c224-42d1-9469-d319065df4cc
+java:S1192H"PDefine a constant instead of duplicating this literal "userInformation" 8 times.(ÉÔÎ8…€Çºù1J$4893f604-a3ee-406c-a46a-b29d298e13f5
 •
-java:S1192’"LDefine a constant instead of duplicating this literal "providerJob" 6 times.(ïºÒ†üÿÿÿÿ8…€Çºù1J$7600d756-dc11-4e49-a246-39d7d449a306
+java:S1192“"LDefine a constant instead of duplicating this literal "providerJob" 6 times.(ïºÒ†üÿÿÿÿ8…€Çºù1J$54f2f333-cf40-447c-83a7-5f80b6498fca
 ’
-java:S1192@"JDefine a constant instead of duplicating this literal "NickName" 13 times.(Í“êûÿÿÿÿ8…€Çºù1J$3de930bf-498f-4a4e-bf2a-72466eb73de1
+java:S1192A"JDefine a constant instead of duplicating this literal "NickName" 13 times.(Í“êûÿÿÿÿ8…€Çºù1J$5b24037b-cd16-4513-afed-b917655f8334
 —
-java:S1192“"NDefine a constant instead of duplicating this literal "providerPhoto" 3 times.(”â•Ùşÿÿÿÿ8…€Çºù1J$470dfcaa-f29d-4ab6-bbc4-33662b67c168
+java:S1192”"NDefine a constant instead of duplicating this literal "providerPhoto" 3 times.(”â•Ùşÿÿÿÿ8…€Çºù1J$ee569cd2-16da-4eba-b157-96481616e798
 •
-java:S1192¯"QDefine a constant instead of duplicating this literal "get failed with " 4 times.(Ö‹›§8¤ßÇ¼ù1J$945fa375-354c-4959-9ab7-39b8f7fe1270
+java:S1192°"QDefine a constant instead of duplicating this literal "get failed with " 4 times.(Ö‹›§8¤ßÇ¼ù1J$d92e7fb3-b215-4efa-9607-6c8c37ded445
 ‘
-java:S1192"MDefine a constant instead of duplicating this literal "servicePrice" 5 times.(Ä‹©Ş8…€Çºù1J$53c2b411-0675-40f8-a205-d67ad714ad5a
+java:S1192‘"MDefine a constant instead of duplicating this literal "servicePrice" 5 times.(Ä‹©Ş8…€Çºù1J$7de8f2e3-ac66-4918-9630-3d66e22fa575
 –
-java:S1192—"MDefine a constant instead of duplicating this literal "serviceCards" 5 times.(“Âàıÿÿÿÿ8¥ßÇ¼ù1J$d205c476-f5f4-486d-a77d-81b87e211f40
+java:S1192˜"MDefine a constant instead of duplicating this literal "serviceCards" 5 times.(“Âàıÿÿÿÿ8¥ßÇ¼ù1J$2badab04-6a6c-4795-ad92-3db749d60656
 ‘
-java:S1192‘"MDefine a constant instead of duplicating this literal "serviceField" 5 times.(ª¡Í‘8…€Çºù1J$e78d0b89-c8d2-4b92-9c55-52961868c072
+java:S1192’"MDefine a constant instead of duplicating this literal "serviceField" 5 times.(ª¡Í‘8…€Çºù1J$67fbd645-8fef-47ca-8c40-ae8406c693fe
 •
-java:S1192¬"QDefine a constant instead of duplicating this literal "No such document" 3 times.(Ñ…¨¢8¥ßÇ¼ù1J$6d2222e5-f04c-4195-975a-98dbe6104bb6
+java:S1192­"QDefine a constant instead of duplicating this literal "No such document" 3 times.(Ñ…¨¢8¥ßÇ¼ù1J$3538ae53-bcda-4f58-98a7-2326182bcac7
 •
-java:S1192´"LDefine a constant instead of duplicating this literal "profile_pic" 3 times.(¥êü­ÿÿÿÿÿ8¦ßÇ¼ù1J$ee84bfd3-fc31-4689-b437-20a28c21ad1c
+java:S1192µ"LDefine a constant instead of duplicating this literal "profile_pic" 3 times.(¥êü­ÿÿÿÿÿ8¦ßÇ¼ù1J$f15f4752-7400-494c-9533-a9b98068b620
 
-java:S1192"LDefine a constant instead of duplicating this literal "serviceName" 5 times.(¬ë28…€Çºù1J$227b3550-9c3b-450a-aab6-fe443faf1225
+java:S1192"LDefine a constant instead of duplicating this literal "serviceName" 5 times.(¬ë28…€Çºù1J$1aa7410f-4bae-42a6-a317-93d021f9c820
 ‹
-java:S1192”"HDefine a constant instead of duplicating this literal "userId" 10 times.(¬¥Õ08§ßÇ¼ù1J$8894aa1c-28fc-4c6c-8bd8-5f3b39504872
+java:S1192•"HDefine a constant instead of duplicating this literal "userId" 10 times.(¬¥Õ08§ßÇ¼ù1J$b360b568-b60e-4163-945e-eac2f8f5fa7c
 
-java:S1192B"KDefine a constant instead of duplicating this literal "isCustomer" 8 times.(ñ¯ÃÙ8…€Çºù1J$db2e4516-5efd-4fab-a06b-97efce19f1f1
+java:S1192C"KDefine a constant instead of duplicating this literal "isCustomer" 8 times.(ñ¯ÃÙ8…€Çºù1J$36c092ba-d3bf-4412-9bef-9a65e283c644
 £
-java:S1192Ã"ZDefine a constant instead of duplicating this literal "Error getting documents: " 3 times.(ÅÓ„”ıÿÿÿÿ8¨ßÇ¼ù1J$b12dcbe4-f6c4-44cd-89d3-d441a3279ade
+java:S1192Ä"ZDefine a constant instead of duplicating this literal "Error getting documents: " 3 times.(ÅÓ„”ıÿÿÿÿ8¨ßÇ¼ù1J$90efab3d-5eb7-4a55-b7f5-1c042a94714f
 ˜
-java:S1192"ODefine a constant instead of duplicating this literal "serviceExplain" 5 times.(€æé¥şÿÿÿÿ8‡€Çºù1J$eedd045a-2885-4a2e-95b5-583bde01b85a
+java:S1192"ODefine a constant instead of duplicating this literal "serviceExplain" 5 times.(€æé¥şÿÿÿÿ8‡€Çºù1J$5300d5e4-a2fc-40b5-bdb4-50a6fa2d8e6b
 p
-java:S1604H"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8ˆ€Çºù1J$8daf3f6e-4f2a-4491-bf2e-dbe9d4d597df
+java:S1604I"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8ˆ€Çºù1J$926b90c1-16dd-43e4-9b32-b4841c426a10
 p
-java:S1604M"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8îßÇ¼ù1J$3883d3b3-d8bf-4814-9096-b272d355b4b9
+java:S1604N"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8îßÇ¼ù1J$1aaf3142-e0ea-4d3d-a75f-c381b87617d5
 k
-java:S16044"(Make this anonymous inner class a lambda(³Ö×•8‰€Çºù1J$3202349f-1cfd-472f-8df2-921cf8bce287
+java:S16045"(Make this anonymous inner class a lambda(³Ö×•8‰€Çºù1J$a0e4bf84-bb88-4367-90ab-3d7bfe69b4d9
 p
-java:S1604{"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8ïßÇ¼ù1J$3172e3e8-6a39-43b1-a8ba-cbda43394fc1
+java:S1604|"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8ïßÇ¼ù1J$cad7ee6f-21c8-43ba-a79b-5dfeb5e1f531
 q
-java:S1604€"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ïßÇ¼ù1J$a66ac5c0-9e57-4149-9d14-4cafd1556131
+java:S1604"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ïßÇ¼ù1J$8d0f5657-7418-412d-bce7-685262a3cf44
 k
-java:S1604f"(Make this anonymous inner class a lambda(³Ö×•8ïßÇ¼ù1J$c47acc7f-8167-41a4-8ee6-a991a1b23146
+java:S1604g"(Make this anonymous inner class a lambda(³Ö×•8ïßÇ¼ù1J$9aa5b4a2-b6cd-4490-9383-176e5eb68f8f
 q
-java:S1604¤"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8ïßÇ¼ù1J$08085e42-2364-4778-a02c-99bad2cf018d
+java:S1604¥"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8ïßÇ¼ù1J$d7a1cb58-2b3e-4e29-88ac-90616031f777
 l
-java:S1604š"(Make this anonymous inner class a lambda(³Ö×•8ğßÇ¼ù1J$6c082066-127b-49d7-82eb-1fc235b19925
+java:S1604›"(Make this anonymous inner class a lambda(³Ö×•8ğßÇ¼ù1J$6edc5a70-4bbc-4e09-8d50-886fe11f3925
 q
-java:S1604È"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8ğßÇ¼ù1J$ac70a2fe-e218-41a2-92b9-7b208548feb7
+java:S1604É"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8ğßÇ¼ù1J$8ab7f91b-2e1a-478f-a03e-02531cbfc75c
 q
-java:S1604é"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8ğßÇ¼ù1J$2337ab47-5f84-431f-aa10-c71c040eb51c
+java:S1604ê"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8ğßÇ¼ù1J$45997664-2fde-4538-9091-54632fba472f
 q
-java:S1604˜"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8òßÇ¼ù1J$9c01c86c-b7b5-41e5-ad7f-5cb9ea58b211
+java:S1604™"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8òßÇ¼ù1J$61140ed6-54e1-4657-ab2f-2300a644fde1
 q
-java:S1604"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8òßÇ¼ù1J$83f03185-cd28-42e8-8bff-d201c3ab2b29
+java:S1604"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8òßÇ¼ù1J$11f4ed93-5c6b-493a-b086-1df24e954835
 q
-java:S1604¯"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8òßÇ¼ù1J$93c426ad-a758-4c42-a8f4-f0a38abf79cf
+java:S1604°"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8òßÇ¼ù1J$524bce36-03d3-48e8-8368-f55e27a26bb2
 q
-java:S1604Ò"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8òßÇ¼ù1J$66b44fa8-2993-415f-9ce2-52f87fd102ec
+java:S1604Ó"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8òßÇ¼ù1J$87687fa9-566f-4c02-b492-a5b81335c91d
 q
-java:S1604÷"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8òßÇ¼ù1J$0ff45a1e-a3b8-458c-9398-c1fc9b6432ec
+java:S1604ø"(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8òßÇ¼ù1J$93cd2f05-338e-4a6d-92e5-cc2b12277215
 q
-java:S1604"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8òßÇ¼ù1J$41b48c27-2166-455b-a7bc-f95b839e9934
+java:S1604Ÿ"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8òßÇ¼ù1J$eb784c75-2f4f-4beb-a38d-5fa97b360ea7
 q
-java:S1604¤"(Make this anonymous inner class a lambda(Ÿ ¹ÿÿÿÿÿ8óßÇ¼ù1J$ed0088c9-a756-4be9-9c19-36c95e531f17
+java:S1604¥"(Make this anonymous inner class a lambda(Ÿ ¹ÿÿÿÿÿ8óßÇ¼ù1J$084d5169-b1eb-459e-b9b3-7cba7dcb944a
 q
-java:S1604Ê"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8óßÇ¼ù1J$f8d2c8a7-a78c-413e-bc88-b31d52f9fc6c
+java:S1604Ë"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8óßÇ¼ù1J$2c43997b-806c-43e1-b5fb-6ff3baad41ee
 q
-java:S1604Ñ"(Make this anonymous inner class a lambda(Ÿ ¹ÿÿÿÿÿ8óßÇ¼ù1J$82a8a7a6-e6b4-4410-8d6a-b81282c9c471
+java:S1604Ò"(Make this anonymous inner class a lambda(Ÿ ¹ÿÿÿÿÿ8óßÇ¼ù1J$ecf2a270-b4d3-447e-9ae1-5d14f1b06aae
 k
-java:S1604´"(Make this anonymous inner class a lambda(¯ã‡8óßÇ¼ù1J$0ab35c1f-3afb-45aa-8633-ee6cdecdf84c
+java:S1604µ"(Make this anonymous inner class a lambda(¯ã‡8óßÇ¼ù1J$6a915843-f6a2-49ce-9a3c-872ea595438d
 q
-java:S1604ø"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8óßÇ¼ù1J$6b664d42-89de-400e-9e82-153a4b052537
+java:S1604ù"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8óßÇ¼ù1J$e59e544b-07f1-4b75-bcb7-09a8e63024d5
 q
-java:S1604ş"(Make this anonymous inner class a lambda(Ÿ ¹ÿÿÿÿÿ8ôßÇ¼ù1J$f494cb09-c16a-4327-b494-74d92bb64b19
+java:S1604ÿ"(Make this anonymous inner class a lambda(Ÿ ¹ÿÿÿÿÿ8ôßÇ¼ù1J$2b5ce09e-1f66-4650-a891-5eec13d55e66
 q
-java:S1604"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8ôßÇ¼ù1J$d13f050f-0ad4-4326-82ff-0212b5ccac1c
+java:S1604‘"(Make this anonymous inner class a lambda(Ïë£ùÿÿÿÿ8ôßÇ¼ù1J$8e9e60b0-87bd-432a-8853-e9b88f0282ce
 q
-java:S1604•"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ôßÇ¼ù1J$2733776f-19f5-42c7-a511-d48ff4b2dfa1
+java:S1604–"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ôßÇ¼ù1J$cd760b1e-a4cc-4965-9583-307062482ebe
 q
-java:S1604ˆ"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8ôßÇ¼ù1J$42bf3c55-2f50-46e2-bc4d-a9fd9bc6de86
+java:S1604‰"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8ôßÇ¼ù1J$3ab6e178-da96-4b46-8424-92f164a83e7f
 q
-java:S1604À"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8õßÇ¼ù1J$0572bdf3-3056-448b-99cd-fa1d7989d37d
+java:S1604Á"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8õßÇ¼ù1J$9ca98c12-91b1-4872-a8ad-ab424e823e76
 q
-java:S1604¶"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8õßÇ¼ù1J$397cbb46-9a54-4141-b925-c8bbe1c81234
+java:S1604·"(Make this anonymous inner class a lambda(„¬é¿øÿÿÿÿ8õßÇ¼ù1J$26a5746f-2705-4c6b-bbf6-d17ce978161a
 É
-java:S1186J"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÚƒÚıÿÿÿÿ8õáÇ¼ù1J$7e887055-700e-485e-a597-0391ad810c77
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÚƒÚıÿÿÿÿ8õáÇ¼ù1J$24ce614c-2078-4597-b1e5-8d07aaf66c7e
 
-java:S1854Ÿ"8Remove this useless assignment to local variable "user".(©Í”äıÿÿÿÿ8 áÇ¼ù1J$7d381bf1-2a05-4623-bb3d-fad3c5ce423b
+java:S1854 "8Remove this useless assignment to local variable "user".(©Í”äıÿÿÿÿ8 áÇ¼ù1J$812c5e6b-d0e3-41ea-a117-6f95273bee8b
 r
-java:S1481Ÿ")Remove this unused "user" local variable.(©Í”äıÿÿÿÿ8£áÇ¼ù1J$e1aa82e1-9699-4158-94b7-8d1ccb1a5701
+java:S1481 ")Remove this unused "user" local variable.(©Í”äıÿÿÿÿ8£áÇ¼ù1J$8e39e6a9-9106-4edd-beff-75de61cf6ddd
 Ê
-java:S1186’"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÚƒÚıÿÿÿÿ8Ñ‡Ò¼ù1J$e0bfac1b-7e43-476f-b7bb-1f56bd486a6b
+java:S1186“"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÚƒÚıÿÿÿÿ8Ñ‡Ò¼ù1J$d52f2ebf-3a3c-4680-9b4c-a3b8df7da09a
 Å
-java:S1186—"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ£—8÷áÇ¼ù1J$22604e9d-1e3b-45e9-ae4c-3e61bb2f0a74
+java:S1186˜"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿ£—8÷áÇ¼ù1J$8c5996c3-5d21-45fe-87eb-4ad1e6423ca8
 –
-java:S3776®"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Å¶ûê8úáÇ¼ù1J$0a45e633-ffcc-4d1c-98fd-95c0ebe71a47
+java:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Å¶ûê8úáÇ¼ù1J$84fbc99f-2341-4126-8af7-7e341c9f1568
 w
-java:S1874¿"3Remove this use of "updateEmail"; it is deprecated.(á™×â8€âÇ¼ù1J$c0cd0609-f03e-4cef-9521-d1cb8e76f4b8
-v
-java:S1128".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8ÌÜÄ¼ù1J$eda0c5a4-67e6-4d38-9f5a-39084ba7ea6d
-ƒ
-java:S1128";Remove this unused import 'androidx.annotation.MainThread'.(ÚÔíêÿÿÿÿÿ8ÌÜÄ¼ù1J$38be7736-ff00-4526-b3ae-9770b5c11918
-
-java:S1128">Remove this unused import 'androidx.navigation.NavDirections'.(Á¥±8ÍÜÄ¼ù1J$bb438f4e-cb9f-4e7d-8cad-fd321935d067
-ƒ
-java:S1128";Remove this unused import 'androidx.navigation.Navigation'.(ÄíÚÀÿÿÿÿÿ8ÍÜÄ¼ù1J$a52f3a42-c93e-4eeb-abd3-a47432700959
-x
-java:S1128"5Remove this unused import 'com.bumptech.glide.Glide'.(Ñˆ…Ë8ÍÜÄ¼ù1J$4d70946c-25f2-4c17-9d93-b2fd8de3f175
-w
-java:S1128!"4Remove this unused import 'com.google.protobuf.Any'.(µŞ™Ø8ÍÜÄ¼ù1J$616d3c52-20a9-4e1c-89c9-e1908519bcef
-s
-java:S1128$"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÍÜÄ¼ù1J$0e5081ce-9d72-4632-a445-505ce620460a
+java:S1874À"3Remove this use of "updateEmail"; it is deprecated.(á™×â8€âÇ¼ù1J$b61eff51-d410-4749-a937-9bd0fee13915

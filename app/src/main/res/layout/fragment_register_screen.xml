@@ -8,7 +8,7 @@
 
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".RegisterScreen">
+    tools:context=".screen.auth.RegisterScreen">
 
     <ImageView
         android:layout_width="match_parent"

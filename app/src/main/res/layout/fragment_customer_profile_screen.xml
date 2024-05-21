@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="top|center"
     android:background="#f5f5f5"
-    tools:context=".CustomerProfileScreen">
+    tools:context=".screen.CustomerProfileScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

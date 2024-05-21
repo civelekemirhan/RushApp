@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreen"
-        android:name="com.example.rushapp.SplashScreen"
+        android:name="com.example.rushapp.screen.SplashScreen"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
 
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginScreen"
-        android:name="com.example.rushapp.LoginScreen"
+        android:name="com.example.rushapp.screen.auth.LoginScreen"
         android:label="fragment_login_screen"
         tools:layout="@layout/fragment_login_screen" >
         <action
@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerScreen"
-        android:name="com.example.rushapp.RegisterScreen"
+        android:name="com.example.rushapp.screen.auth.RegisterScreen"
         android:label="fragment_register_screen"
         tools:layout="@layout/fragment_register_screen" >
         <action
@@ -69,7 +69,7 @@
     </fragment>
     <fragment
         android:id="@+id/customerPage"
-        android:name="com.example.rushapp.CustomerPage"
+        android:name="com.example.rushapp.screen.CustomerPage"
         android:label="fragment_customer_page"
         tools:layout="@layout/fragment_customer_page" >
         <action
@@ -83,7 +83,7 @@
     </fragment>
     <fragment
         android:id="@+id/providerPage"
-        android:name="com.example.rushapp.ProviderPage"
+        android:name="com.example.rushapp.screen.ProviderPage"
         android:label="fragment_provider_page"
         tools:layout="@layout/fragment_provider_page" >
         <action
@@ -97,7 +97,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileScreen"
-        android:name="com.example.rushapp.ProfileScreen"
+        android:name="com.example.rushapp.screen.ProfileScreen"
         android:label="fragment_profile_screen"
         tools:layout="@layout/fragment_profile_screen" />
 

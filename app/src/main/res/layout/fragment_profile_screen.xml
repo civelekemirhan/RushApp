@@ -10,7 +10,7 @@
     android:background="#f5f5f5"
     android:gravity="top|center"
 
-    tools:context=".ProfileScreen">
+    tools:context=".screen.ProfileScreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
