@@ -20,6 +20,7 @@ import com.example.rushapp.callback.ProviderInfoCallback;
 import com.example.rushapp.data.db.DBOperations;
 import com.example.rushapp.data.model.Provider;
 import com.example.rushapp.databinding.FragmentProviderPageBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class ProviderPage extends Fragment {
@@ -47,7 +48,7 @@ public class ProviderPage extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        replaceFragment(new UniversalHomeScreen());
+
     }
 
     @Override
@@ -64,8 +65,8 @@ public class ProviderPage extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        DBOperations dbo=new DBOperations();
-        dbo.getProviderInformation(new ProviderInfoCallback(){
+
+        DBOperations.getProviderInformation(new ProviderInfoCallback(){
 
             @Override
             public void onProviderReceived(Provider provider) {
@@ -74,11 +75,11 @@ public class ProviderPage extends Fragment {
                     if (item.getItemId() == R.id.home) {
                         replaceFragment(new UniversalHomeScreen());
                     }else if(item.getItemId() == R.id.savesService){
-                        replaceFragment(new UniversalSavesScreen());
+                        replaceFragment(new UniversalSavesScreen(binding.bottomNavigationView));
                     }else if(item.getItemId() == R.id.pastchat){
-                        replaceFragment(new UniversalChatScreen());
+                        replaceFragment(new UniversalChatScreen(binding.bottomNavigationView));
                     }else if(item.getItemId() == R.id.profile){
-                        replaceFragment(new ProviderProfileScreen(provider.getMail().toString(),provider.getName().toString(),provider.getJob(),item));
+                        replaceFragment(new ProviderProfileScreen(provider,item));
                     }else{
 
                         replaceFragment(new ProviderServeScreen(item));

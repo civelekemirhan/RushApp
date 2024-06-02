@@ -70,11 +70,11 @@ public class RegisterScreen extends Fragment {
                     if (registerPassAgain.equals(registerPass)) {
 
 
-                        DBOperations dbo=new DBOperations();
+
 
                         if(binding.checkbox.isChecked()){
                             Provider provider = new Provider(registerMail, registerName,registerPass,registerJob,false);
-                            dbo.registerProvider(provider, getContext(), new RegistrationCallback() {
+                            DBOperations.registerProvider(provider, getContext(), new RegistrationCallback() {
                                 @Override
                                 public void onRegistrationSuccess() {
                                     NavDirections action = RegisterScreenDirections.actionRegisterScreenToProviderPage();
@@ -88,7 +88,7 @@ public class RegisterScreen extends Fragment {
                             });
                         }else{
                             Customer customer = new Customer(registerMail,registerName,registerPass,registerJob,true);
-                            dbo.registerCustomer(customer, getContext(), new RegistrationCallback() {
+                            DBOperations.registerCustomer(customer, getContext(), new RegistrationCallback() {
                                 @Override
                                 public void onRegistrationSuccess() {
                                     NavDirections action = RegisterScreenDirections.actionRegisterScreenToCustomerPage();

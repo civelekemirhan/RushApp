@@ -2,9 +2,12 @@ package com.example.rushapp.data.model;
 
 import android.content.Context;
 import android.net.Uri;
+import android.view.MenuItem;
 
 import com.example.rushapp.databinding.FragmentUniversalSavesScreenBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class User {
@@ -70,11 +73,13 @@ public abstract class User {
     }
 
     // Abstract method
-    public abstract void getService();
+    public abstract void getService(Offer offer,Context context);
 
-    public abstract void savesService(List<ServiceCard> savedCardList, FragmentUniversalSavesScreenBinding binding, Context context);
+    public abstract void savesService(ArrayList<ServiceCard> savedCardList, boolean isFilter,String minPrice,String maxPrice,String serviceField,FragmentUniversalSavesScreenBinding binding, Context context, BottomNavigationView bottomNavigationView);
 
 
+    public abstract void receivedServiceHistory();
+        // Alınan hizmet geçmişi işlemleri
 
 
     public boolean isCustomer() {

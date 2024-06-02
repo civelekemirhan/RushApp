@@ -13,7 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
+import androidx.viewpager2.widget.ViewPager2;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,11 +26,15 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.rushapp.R;
+import com.example.rushapp.adapter.MyCustomerViewPagerAdapter;
+import com.example.rushapp.adapter.MyViewPagerAdapter;
 import com.example.rushapp.data.db.DBOperations;
+import com.example.rushapp.data.model.Customer;
 import com.example.rushapp.databinding.FragmentCustomerProfileScreenBinding;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.storage.UploadTask;
 
@@ -38,22 +44,19 @@ import kotlin.jvm.functions.Function1;
 
 public class CustomerProfileScreen extends Fragment {
 
+    MyCustomerViewPagerAdapter myCustomerViewPagerAdapter;
     FragmentCustomerProfileScreenBinding binding;
 
-    private String userMail;
-    private String userNickName;
+    Customer customer;
 
-    private String userJob;
     Uri selectedImageUri;
     ActivityResultLauncher<Intent> imagePickLauncher;
 
     MenuItem item;
-    public CustomerProfileScreen(String userMail, String userNickName, String userJob,MenuItem item) {
-        // Required empty public constructor
-        this.userMail=userMail;
-        this.userNickName=userNickName;
+    public CustomerProfileScreen(Customer customer, MenuItem item) {
+
+       this.customer=customer;
         this.item=item;
-        this.userJob=userJob;
 
     }
 
@@ -71,23 +74,22 @@ public class CustomerProfileScreen extends Fragment {
                             Glide.with(getContext()).load(selectedImageUri).apply(RequestOptions.circleCropTransform()).into(binding.profilephoto);
 
                         }
-                        DBOperations dbo=new DBOperations();
+
                         if(selectedImageUri!=null){
 
-                            UploadTask uploadTask=dbo.getCurrentProfilePic().putFile(selectedImageUri);
-                            dbo.setUserInformation(selectedImageUri,"profilePhoto");
+                            UploadTask uploadTask=DBOperations.getCurrentProfilePic().putFile(selectedImageUri);
+                            DBOperations.setUserInformation(selectedImageUri,"profilePhoto");
 
                             uploadTask.addOnFailureListener(new OnFailureListener() {
 
                                 @Override
                                 public void onFailure(@NonNull Exception exception) {
-                                    // Handle unsuccessful uploads
+
                                 }
                             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                                    // taskSnapshot.getMetadata() contains file metadata such as size, content-type, etc.
-                                    // ...
+
                                 }
                             });
                         }
@@ -112,8 +114,8 @@ public class CustomerProfileScreen extends Fragment {
 
     item.setEnabled(false);
 
-            DBOperations dbOperations=new DBOperations();
-            dbOperations.getCurrentProfilePic().getDownloadUrl()
+
+            DBOperations.getCurrentProfilePic().getDownloadUrl()
                     .addOnCompleteListener(task -> {
                         if(task.isSuccessful()){
                             Uri uri=task.getResult();
@@ -132,11 +134,37 @@ public class CustomerProfileScreen extends Fragment {
 
 
 
-        binding.useremail.setText(userMail);
-        binding.usernickname.setText(userNickName);
-        binding.userJob.setText(userJob);
+        binding.useremail.setText(customer.getMail());
+        binding.usernickname.setText(customer.getName());
+        binding.userJob.setText(customer.getJob());
+        Log.d("PASSES","\ncustomer.getPassword() = "+customer.getName());
         eventHandler();
+        myCustomerViewPagerAdapter=new MyCustomerViewPagerAdapter(requireActivity(),customer);
+        binding.viewpager.setAdapter(myCustomerViewPagerAdapter);
+        binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                binding.viewpager.setCurrentItem(tab.getPosition());
+            }
 
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        binding.viewpager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                binding.tabLayout.getTabAt(position).select();
+            }
+        });
 
 
 
@@ -177,50 +205,62 @@ public class CustomerProfileScreen extends Fragment {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                 builder.setTitle("Profil Düzenle");
 
-                // set the custom layout
+
                 final View customLayout = getLayoutInflater().inflate(R.layout.custom_dialog, null);
                 builder.setView(customLayout);
 
-                // add a button
+
                 builder.setPositiveButton("OK", (dialog, which) -> {
-                    // send data from the AlertDialog to the Activity
-                    TextInputEditText editUserMailText = customLayout.findViewById(R.id.editUserMail);
+
                     TextInputEditText editUserNameText = customLayout.findViewById(R.id.editUserName);
                     TextInputEditText editUserJobText = customLayout.findViewById(R.id.editUserJob);
                     TextInputEditText editUserPassword=customLayout.findViewById(R.id.confirmpass);
-                    DBOperations dbo =new DBOperations();
 
-                    String email = editUserMailText.getText().toString();
+
+
                     String name = editUserNameText.getText().toString();
                     String job = editUserJobText.getText().toString();
                     String pass=editUserPassword.getText().toString();
+                    Log.d("PASSES","provider.getPassword() = "+customer.getPassword()+"\npass = "+""+pass);
 
+                    if ( name.isEmpty() || job.isEmpty() || pass.isEmpty()) {
 
-                    if (email.isEmpty() || name.isEmpty() || job.isEmpty()) {
-                        if (email.isEmpty()) {
-                            email=binding.useremail.getText().toString();
-                        }
                         if (name.isEmpty()) {
                             name=binding.usernickname.getText().toString();
                         }
                         if (job.isEmpty()) {
                             job=binding.userJob.getText().toString();
                         }
-                        dbo.editProfile(email, name, job);
-                        dbo.editMail(email,pass);
-                        dbo.logOut();
-                        Toast.makeText(getContext(),"Değişiklikler Başarılı Tekrar Giriş Yapnız",Toast.LENGTH_SHORT).show();
-                        NavDirections action = CustomerPageDirections.actionCustomerPageToLoginScreen();
-                        Navigation.findNavController(v).navigate(action);
+                        if(pass.isEmpty()){
+                            Toast.makeText(getContext(),"Şifre kısmı boş geçilemez", Toast.LENGTH_SHORT).show();
+                        }else{
+                            if(pass.equals(customer.getPassword())){
+
+                                DBOperations.editProfile( name, job);
+                                DBOperations.logOut();
+                                Toast.makeText(getContext(),"Değişiklikler Başarılı Tekrar Giriş Yapınız",Toast.LENGTH_SHORT).show();
+                                NavDirections action = CustomerPageDirections.actionCustomerPageToLoginScreen();
+                                Navigation.findNavController(v).navigate(action);
+                            }else{
+                                Toast.makeText(getContext(),"Şifrenizi Yanlış girdiniz, Bu işlem gerçekleştirilemez", Toast.LENGTH_SHORT).show();
+                            }
+
+                        }
 
                     } else {
 
-                        dbo.editProfile(email, name, job);
-                        dbo.editMail(email,pass);
-                        dbo.logOut();
-                        Toast.makeText(getContext(),"Değişiklikler Başarılı Tekrar Giriş Yapnız",Toast.LENGTH_SHORT).show();
-                        NavDirections action = CustomerPageDirections.actionCustomerPageToLoginScreen();
-                        Navigation.findNavController(v).navigate(action);
+                        if(pass.equals(customer.getPassword())){
+
+                            DBOperations.editProfile( name, job);
+
+                            DBOperations.logOut();
+                            Toast.makeText(getContext(),"Değişiklikler Başarılı Tekrar Giriş Yapınız",Toast.LENGTH_SHORT).show();
+                            NavDirections action = CustomerPageDirections.actionCustomerPageToLoginScreen();
+                            Navigation.findNavController(v).navigate(action);
+                        }else{
+                            Toast.makeText(getContext(),"Şifrenizi Yanlış girdiniz, Bu işlem gerçekleştirilemez", Toast.LENGTH_SHORT).show();
+
+                        }
 
                     }
 

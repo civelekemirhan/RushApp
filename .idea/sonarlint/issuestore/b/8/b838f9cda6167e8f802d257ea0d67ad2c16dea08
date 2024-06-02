@@ -1,0 +1,9 @@
+
+¬
+java:S1319("iThe type of "arrayList" should be an interface such as "List" rather than the implementation "ArrayList".(–’á 8»¼â¿ý1J$e418e048-d44a-4343-a851-ab9f6bf9c8ee
+„
+java:S4973;"<Strings and Boxed types should be compared using "equals()".(Éš­°üÿÿÿÿ8½¼â¿ý1J$118a7e13-39a0-42d8-885b-e9248b3fe373
+—
+java:S1450%"TRemove the "mAuth" field and declare it as a local variable in the relevant methods.(ªÐ”’8ë¼â¿ý1J$f7a8e5ec-7239-418c-adb0-7a1bd513151c
+m
+java:S1068&"+Remove this unused "context" private field.(êÝç8ø¼â¿ý1J$d6bf1721-4ecb-4520-b3a9-ce1a19279495

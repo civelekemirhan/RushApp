@@ -1,0 +1,32 @@
+
+¬
+java:S1319("iThe type of "arrayList" should be an interface such as "List" rather than the implementation "ArrayList".(³·Â¢8•öÙÎı1J$ce09cd41-5de9-45d2-8254-e459ebd8e611
+k
+java:S1604E"(Make this anonymous inner class a lambda(êÂ…Ñ8˜öÙÎı1J$5240d29c-3fe8-4f9c-80e1-bb1bac6255ff
+k
+java:S1604V"(Make this anonymous inner class a lambda(À­ò™8˜öÙÎı1J$9ca9c3f5-d40c-447a-b104-7a1f1027ad60
+k
+java:S1604`"(Make this anonymous inner class a lambda(Õü°8˜öÙÎı1J$3d06e647-b748-42e8-9312-29ec36e7f589
+p
+java:S1604R"(Make this anonymous inner class a lambda(ğáÿ®ıÿÿÿÿ8˜öÙÎı1J$c4be1c18-d708-44dc-8570-8d752ae6e5ba
+p
+java:S1604O"(Make this anonymous inner class a lambda(Ú¾‘ıÿÿÿÿ8˜öÙÎı1J$84b6b31c-cb92-45cf-b394-0b28aa8f2f53
+p
+java:S1604t"(Make this anonymous inner class a lambda(ğáÿ®ıÿÿÿÿ8™öÙÎı1J$21dbbb96-a870-43a7-90ad-f8509a3b1118
+j
+java:S1604o"(Make this anonymous inner class a lambda(÷Â×W8™öÙÎı1J$fa0e5a79-7912-49ac-92ac-e929ee05af8e
+q
+java:S1604"(Make this anonymous inner class a lambda(ğáÿ®ıÿÿÿÿ8™öÙÎı1J$90aa4b64-99bb-4b81-9602-6d2f71b0193c
+q
+java:S1604‹"(Make this anonymous inner class a lambda(Êôûşÿÿÿÿ8™öÙÎı1J$17e6c583-c334-4e00-8d27-8a1f5b39e2b9
+q
+java:S1604§"(Make this anonymous inner class a lambda(ğáÿ®ıÿÿÿÿ8™öÙÎı1J$103466f2-76e6-45ae-82f1-cf4188ac6965
+q
+java:S1604£"(Make this anonymous inner class a lambda(“´¢Ìøÿÿÿÿ8™öÙÎı1J$61b4fcc9-1402-4014-97d8-8801830beaec
+š
+java:S37765"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.( ÖÒÓşÿÿÿÿ8¨÷ÙÎı1J$66d12e60-eeba-4d2a-9b43-5e7e6367fd15
+‘
+java:S1858Y"I"getProviderMail" returns a string, there's no need to call "toString()".(Å§Îÿÿÿÿÿ8°÷ÙÎı1J$8c85f1de-f8de-4dc5-8b74-920078f2c643
+k
+java:S1858c"I"getProviderMail" returns a string, there's no need to call "toString()".(Å§Îÿÿÿÿÿ8Ï«ÚÎı1
+„	java:S125“"<This block of commented-out lines of code should be removed.(±Ôåêşÿÿÿÿ8Á÷ÙÎı1J$02fcaa6c-da44-4c94-98fb-658e29126ba2

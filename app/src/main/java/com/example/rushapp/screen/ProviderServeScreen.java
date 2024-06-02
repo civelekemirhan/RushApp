@@ -55,8 +55,8 @@ public class ProviderServeScreen extends Fragment {
 
 
         // Profil fotoğrafının yüklenmesi
-        DBOperations dbo = new DBOperations();
-        dbo.getCurrentProfilePic().getDownloadUrl()
+
+        DBOperations.getCurrentProfilePic().getDownloadUrl()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         Uri uri = task.getResult();
@@ -70,7 +70,7 @@ public class ProviderServeScreen extends Fragment {
                 });
 
         // Servis bilgilerinin yüklenmesi ve buton tıklaması işlemleri
-        dbo.getProviderInformation(new ProviderInfoCallback() {
+        DBOperations.getProviderInformation(new ProviderInfoCallback() {
             @Override
             public void onProviderReceived(Provider provider) {
                  // ProgressDialog gizleniyor
@@ -83,8 +83,16 @@ public class ProviderServeScreen extends Fragment {
 
                     if (!serviceName.isEmpty() && !serviceExplain.isEmpty() && !servicePrice.isEmpty() && !serviceField.isEmpty()) {
                         // Yeni servis kartı oluşturuluyor
-                        ServiceCard card = new ServiceCard(serviceName, provider.getName(), provider.getMail(), serviceExplain, serviceField, servicePrice, provider.getJob(), provider.getProfilePhoto(),provider.getUserUid());
-                        provider.serve(card);
+
+                        try {
+                            Integer.parseInt(servicePrice);
+                            ServiceCard card = new ServiceCard(serviceName, provider.getName(), provider.getMail(), serviceExplain, serviceField, servicePrice.toString(), provider.getJob(), provider.getProfilePhoto(),provider.getUserUid());
+                            provider.serve(card);
+                        } catch (NumberFormatException e) {
+                            Toast.makeText(getContext(),"Lütfen düzgün bir fiyat bilgisi giriniz",Toast.LENGTH_SHORT).show();
+
+                        }
+
 
                         // Girdi alanları temizleniyor
                         binding.serviceName.setText("");

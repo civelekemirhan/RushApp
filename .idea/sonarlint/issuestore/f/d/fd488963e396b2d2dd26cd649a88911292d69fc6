@@ -1,9 +1,0 @@
-
-p
-java:S1604B"(Make this anonymous inner class a lambda(Œ¾Ê©úÿÿÿÿ8Ë–Áø1J$647a5286-ab47-45e7-832e-882116f1d807
-y
-java:S1874"6Remove this use of "ProgressDialog"; it is deprecated.(ğİıº8”—Áø1J$7c273568-3a8b-4de8-9ead-9197395bd67f
-„
-java:S1858O"A"getMail" returns a string, there's no need to call "toString()".(è…Ó³8®—Áø1J$4a25674c-6ab5-43a6-b0d4-64c1847a9d08
-„
-java:S1858O"A"getName" returns a string, there's no need to call "toString()".(è…Ó³8´—Áø1J$881ed6dd-04c0-4c5f-a83a-62eae7f0945b

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
 
@@ -22,6 +25,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.Chat"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Diğer öznitelikler -->
         </activity>
         <meta-data
             android:name="preloaded_fonts"

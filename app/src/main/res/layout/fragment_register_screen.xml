@@ -5,9 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".screen.auth.RegisterScreen">
 
     <ImageView
@@ -15,238 +12,216 @@
         android:layout_height="match_parent"
         android:src="@drawable/person"
         android:scaleType="centerCrop"
-       />
-    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#BF000000"
-        android:gravity="center"
-        >
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
         <LinearLayout
-            android:id="@+id/contentLinearLayoutRegister"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
             android:orientation="vertical"
-            android:gravity="center">
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="411dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="KAYIT OL"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-
-            <com.google.android.material.textfield.TextInputLayout
-
-                android:id="@+id/textInputLayoutMail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="351dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:hint="Email giriniz"
-                app:boxStrokeColor="@color/white"
-                app:cursorColor="@color/white"
-                app:hintTextColor="@color/white"
-                android:textColorHint="@color/white"
-                app:endIconMode="clear_text"
-                app:endIconTint="@color/white"
-                app:startIconDrawable="@drawable/ic_mail"
-                app:startIconTint="@color/white">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registerMail"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="206dp"
-                    android:textColor="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-
-                android:id="@+id/textInputLayoutName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="351dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:hint="Kullanıcı adı giriniz"
-                app:boxStrokeColor="@color/white"
-                app:cursorColor="@color/white"
-                app:hintTextColor="@color/white"
-                android:textColorHint="@color/white"
-                app:endIconMode="clear_text"
-                app:endIconTint="@color/white"
-                app:startIconDrawable="@drawable/baseline_person_24"
-                app:startIconTint="@color/white">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registerName"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="206dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-
-                android:id="@+id/textInputLayoutJob"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="351dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:hint="Mesleğinizi giriniz"
-
-                app:boxStrokeColor="@color/white"
-                app:cursorColor="@color/white"
-                app:hintTextColor="@color/white"
-                android:textColorHint="@color/white"
-                app:endIconMode="clear_text"
-                app:endIconTint="@color/white"
-                app:startIconDrawable="@drawable/baseline_edit_24"
-                app:startIconTint="@color/white">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registerJob"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="206dp"
-                    android:textColor="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutPass"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="351dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:hint="Şifre giriniz"
-                app:boxStrokeColor="@color/white"
-                app:cursorColor="@color/white"
-                app:hintTextColor="@color/white"
-                android:textColorHint="@color/white"
-                app:endIconMode="password_toggle"
-                app:endIconTint="@color/white"
-                app:startIconDrawable="@drawable/baseline_password_24"
-                app:startIconTint="@color/white">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registerPass"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="206dp"
-                    android:ellipsize="none"
-                    android:textColor="@color/white"
-                    android:inputType="textPassword"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutPassAgain"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="351dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="Tekrar şifre giriniz"
-                app:boxStrokeColor="@color/white"
-                app:cursorColor="@color/white"
-                app:hintTextColor="@color/white"
-                android:textColorHint="@color/white"
-                app:endIconMode="password_toggle"
-                app:endIconTint="@color/white"
-                app:startIconDrawable="@drawable/baseline_password_24"
-                app:startIconTint="@color/white">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registerPassAgain"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="206dp"
-                    android:ellipsize="none"
-                    android:textColor="@color/white"
-                    android:inputType="textPassword"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#BF000000">
 
             <LinearLayout
-                android:layout_width="348dp"
+                android:id="@+id/contentLinearLayoutRegister"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:gravity="end"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="25dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="HİZMET VEREN OL"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="KAYIT OL"
                     android:textAlignment="center"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
 
-                <androidx.appcompat.widget.AppCompatCheckBox
-                    android:id="@+id/checkbox"
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutMail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@color/white"
-                    android:checked="false" />
+                    android:layout_marginBottom="20dp"
+                    android:hint="Email giriniz"
+                    app:boxStrokeColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/ic_mail"
+                    app:startIconTint="@color/white">
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Kullanıcı adı giriniz"
+                    app:boxStrokeColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/baseline_person_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutJob"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Mesleğinizi giriniz"
+                    app:boxStrokeColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/baseline_edit_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutPass"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Şifre giriniz"
+                    app:boxStrokeColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/baseline_password_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutPassAgain"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Tekrar şifre giriniz"
+                    app:boxStrokeColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/white"
+                    app:startIconDrawable="@drawable/baseline_password_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/registerPassAgain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="HİZMET VEREN OL"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:checked="false" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/registerButton"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_registerbutton"
+                    android:text="KAYIT OL"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bangers"
+                    android:text="RUSH"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="70sp"
+                    android:layout_marginTop="16dp" />
 
             </LinearLayout>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/registerButton"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_registerbutton"
-                android:text="KAYIT OL"
-                android:textStyle="bold"
-                android:textAllCaps="false"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/appName"
-                android:layout_width="182dp"
-                android:layout_height="105dp"
-                android:fontFamily="@font/bangers"
-                android:text="RUSH"
-
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="70sp" />
-
         </LinearLayout>
-
-
-
-    </LinearLayout>
-
-
-
-
-
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

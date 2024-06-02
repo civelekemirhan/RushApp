@@ -80,6 +80,9 @@
         <action
             android:id="@+id/action_customerPage_to_profileScreen"
             app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_customerPage_to_chat"
+            app:destination="@id/chat" />
     </fragment>
     <fragment
         android:id="@+id/providerPage"
@@ -94,11 +97,46 @@
         <action
             android:id="@+id/action_providerPage_to_profileScreen"
             app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_providerPage_to_chat"
+            app:destination="@id/chat" />
     </fragment>
     <fragment
         android:id="@+id/profileScreen"
         android:name="com.example.rushapp.screen.ProfileScreen"
         android:label="fragment_profile_screen"
-        tools:layout="@layout/fragment_profile_screen" />
+        tools:layout="@layout/fragment_profile_screen" >
+
+
+        <argument
+            android:name="profilePhoto"
+            app:argType="string" />
+        <argument
+            android:name="providerName"
+            app:argType="string" />
+        <argument
+            android:name="providerJob"
+            app:argType="string" />
+        <argument
+            android:name="providerMail"
+            app:argType="string" />
+        <argument android:name="providerUid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.rushapp.screen.Chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="providerUserName"
+            app:argType="string" />
+        <argument
+            android:name="providerProfilePhoto"
+            app:argType="string" />
+        <argument
+            android:name="providerID"
+            app:argType="string" />
+    </fragment>
 
 </navigation>

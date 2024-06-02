@@ -1,7 +1,14 @@
 
+°
+java:S1319N"mThe type of "savedCardList" should be an interface such as "List" rather than the implementation "ArrayList".(À‘ †8óä¡Îı1J$6b740e82-f25a-4b85-b430-c7003ad068b1
 |
-java:S5993"9Change the visibility of this constructor to "protected".(°¸•µ8–¹Šù1J$7ea9f2de-6708-4337-a960-4dab59c772d7
+java:S5993"9Change the visibility of this constructor to "protected".(°¸•µ8‚å¡Îı1J$37c67cc2-1e6f-4bd9-acdb-8ca4d40ddcef
 
-java:S5993"9Change the visibility of this constructor to "protected".(†Œêãşÿÿÿÿ8–¹Šù1J$438bce5e-3ffd-44ff-a5b5-3ac3e4b45f42
+java:S5993 "9Change the visibility of this constructor to "protected".(†Œêãşÿÿÿÿ8‚å¡Îı1J$94739441-622b-416d-9a67-549ac21b8ae5
 {
-java:S5993&"9Change the visibility of this constructor to "protected".(¯Ğç8–¹Šù1J$a8703ebd-ac15-48bb-a2b6-a20e3b3abf6d
+java:S5993)"9Change the visibility of this constructor to "protected".(¯Ğç8‚å¡Îı1J$f7ae5929-88f9-4e31-9d10-99503d77678c
+~	java:S107N"<Method has 8 parameters, which is greater than 7 authorized.(À‘ †8ƒå¡Îı1J$8c763432-ef0f-4ccc-955f-88ada55977e9
+u
+java:S1128"2Remove this unused import 'android.view.MenuItem'.(Ğ¬Ó‘8ˆå¡Îı1J$3604f954-cf5a-46d2-a9b0-7b6466961e10
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ˆå¡Îı1J$f9da1da7-accf-45db-a717-8db04b184222

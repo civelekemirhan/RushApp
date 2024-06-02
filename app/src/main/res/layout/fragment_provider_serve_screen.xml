@@ -7,12 +7,36 @@
     android:background="#f5f5f5"
     tools:context=".screen.ProviderServeScreen">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Servis Oluştur"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/card_custom"
+        android:background="@drawable/cardesign_linear_layout"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="15dp"
@@ -54,6 +78,7 @@
                 android:id="@+id/serviceName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:maxLength="25"
                 android:layout_marginTop="206dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="206dp"
                 android:inputType="text|textMultiLine"
+                android:maxLength="120"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -98,6 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="206dp"
+                android:maxLength="20"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -118,6 +145,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="206dp"
+                android:maxLength="10"
                 android:inputType="text|textMultiLine"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -134,7 +162,7 @@
             android:background="@drawable/custom_button"
             android:text="Hizmeti Yayınla"
             android:textAllCaps="false"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
     </LinearLayout>

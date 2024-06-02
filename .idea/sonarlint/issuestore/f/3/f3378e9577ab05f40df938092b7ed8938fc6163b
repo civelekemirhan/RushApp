@@ -1,0 +1,39 @@
+
+k
+java:S1604S"(Make this anonymous inner class a lambda(ÎŸÜÜ8“×³Ïı1J$a2c8b9cd-1620-4c7d-8c4b-84dfc73d6ae6
+j
+java:S1604Y"(Make this anonymous inner class a lambda(‹Ô”H8”×³Ïı1J$67fed839-98cc-41bb-9123-4a1ff6b33a8f
+q
+java:S1604²"(Make this anonymous inner class a lambda(è°Ÿúÿÿÿÿ8”×³Ïı1J$28648462-a52d-429e-bf48-14e2724a3764
+q
+java:S1604®"(Make this anonymous inner class a lambda(‚Òí‚úÿÿÿÿ8•×³Ïı1J$f9c51d65-e7ce-4f77-82ab-052e05ef1c0f
+q
+java:S1604À"(Make this anonymous inner class a lambda(è°Ÿúÿÿÿÿ8•×³Ïı1J$29281f9c-2018-4579-920c-41f65ca29d89
+l
+java:S1604¼"(Make this anonymous inner class a lambda(ÌÎÊ°8•×³Ïı1J$1853bd4a-f21e-4020-b7b6-b0ca79fd21f3
+k
+java:S1604Ê"(Make this anonymous inner class a lambda(Ì¨Ü18•×³Ïı1J$568c87d9-5eed-4e62-9585-05398d955377
+l
+java:S1604’"(Make this anonymous inner class a lambda(«Û™¬8•×³Ïı1J$e7716a4b-3fc8-45f7-b9cc-321beae8d774
+q
+java:S1604œ"(Make this anonymous inner class a lambda(åäÜ‡üÿÿÿÿ8•×³Ïı1J$7a3886b4-1027-4b2f-afff-cfb661d3c348
+É
+java:S1186V"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Èˆèøÿÿÿÿ8ó×³Ïı1J$a460e315-d8d2-4bcf-a782-42d3e1e9fd94
+É
+java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–ªæ¡ûÿÿÿÿ8õ×³Ïı1J$f56fc403-4cff-4b46-9a6a-6cdaaed24d39
+Ê
+java:S1186—"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½Ä³ïşÿÿÿÿ8ù×³Ïı1J$c7e5867e-2a38-4de9-90cc-835bd8b20b09
+Å
+java:S1186œ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦›Í8ù×³Ïı1J$f5119d28-918f-4360-9f19-92accfca514d
+–
+java:S3776¬"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¼¹ú©8ı×³Ïı1J$bcf15c3f-c984-4950-a98b-a7a6f462b67f
+u
+java:S2440•",Remove this instantiation of "DBOperations".(Ş‹¤Õûÿÿÿÿ8šØ³Ïı1J$a467f39e-a56a-4101-90cb-f2cf3a3a1eb2
+~
+java:S2209–"5Change this instance-reference to a static reference.(šÿ½Êşÿÿÿÿ8›Ø³Ïı1J$99e1681b-660d-48b8-8d67-238f183445e5
+u
+java:S2440Ÿ",Remove this instantiation of "DBOperations".(Ş‹¤Õûÿÿÿÿ8œØ³Ïı1J$180dde18-85e2-45dd-8185-afde8caa746c
+~
+java:S2209¡"5Change this instance-reference to a static reference.(á³…“ùÿÿÿÿ8œØ³Ïı1J$743f8a83-8194-4cec-b846-721ef0ae0ded
+~
+java:S2209¢"5Change this instance-reference to a static reference.(šÿ½Êşÿÿÿÿ8Ø³Ïı1J$76659295-1659-4031-ae0f-78cafa2467ba

@@ -12,7 +12,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:background="@color/appColor"
         android:layout_height="wrap_content">
 
         <TextView
@@ -21,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:text="Profil"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -57,8 +59,8 @@
             android:layout_width="133dp"
             android:layout_height="115dp"
             android:src="@drawable/person"
-            app:civ_border_color="@color/appColorTwo"
-            app:civ_border_width="2dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.067"
@@ -156,31 +158,38 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        >
+        android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Aldığınız Hizmetler"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:background="#f5f5f5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/appColor"
+            app:tabTextColor="@color/black">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="407dp"
-            android:layout_height="349dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintVertical_bias="1.0" />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alınan Hizmetler" />
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verdiğim Teklifler" />
+
+        </com.google.android.material.tabs.TabLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 </LinearLayout>

@@ -1,0 +1,33 @@
+
+–
+java:S1192¸"RDefine a constant instead of duplicating this literal "isFilterBilgisi =" 3 times.(ö†ñ°8îåúûû1J$0dc4dec1-1d7d-4087-ad56-8fc66b254e56
+p
+java:S1604["(Make this anonymous inner class a lambda(ğ±£šÿÿÿÿÿ8Âªé÷û1J$18f0e544-ed55-4bd3-943e-6974e30dcc4f
+k
+java:S1604u"(Make this anonymous inner class a lambda(À­ò™8Ãªé÷û1J$9e38b3b0-5c0b-43f4-9d0d-9cce09ab9725
+l
+java:S1604µ"(Make this anonymous inner class a lambda(À­ò™8ğåúûû1J$6e9f4600-bfd7-41dd-96d6-d26ad353d25d
+q
+java:S1604"(Make this anonymous inner class a lambda(ŞçŞÚüÿÿÿÿ8ğåúûû1J$d7757513-d1fd-45d3-b5e2-295ec6550ab3
+l
+java:S1604ÿ"(Make this anonymous inner class a lambda(À­ò™8ñåúûû1J$a468c4c2-8aa5-481c-8a44-af05d3a28968
+l
+java:S1604×"(Make this anonymous inner class a lambda(Á’½Ï8ñåúûû1J$2f8cb026-eca7-42d3-b161-110b1157ea12
+™
+java:S14505"QRemove the "db" field and declare it as a local variable in the relevant methods.(î–æ‡üÿÿÿÿ8õªé÷û1J$beab257e-9d15-458c-a608-0f51aad880f4
+—
+java:S14503"TRemove the "mAuth" field and declare it as a local variable in the relevant methods.(ªĞ”’8öªé÷û1J$01cd649d-fda9-437e-ad3c-6b6a2534f657
+k
+java:S1185C"(Remove this method to simply inherit it.(ßìê¯8ıªé÷û1J$7325dca2-32d3-4c84-8beb-77aef72b6de5
+o
+java:S1125b"'Remove the unnecessary boolean literal.(ÀãÒÛûÿÿÿÿ8€«é÷û1J$31432a1f-e8fe-4fa1-a2c9-5b8fd4087dc6
+–
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¼¹ú©8ƒ«é÷û1J$594855c9-c938-4c8b-a2b1-ca3da23bf342
+q
+java:S1481¡"(Remove this unused "min" local variable.(­·¼÷şÿÿÿÿ8éæúûû1J$b1ce14f5-b13e-4c71-8305-23e9e7f60167
+q
+java:S1481¢"(Remove this unused "max" local variable.( ò¡«ûÿÿÿÿ8éæúûû1J$dcf49efc-c5f6-4587-a1b5-4ce18d8928a6
+q
+java:S1481ë"(Remove this unused "min" local variable.(­·¼÷şÿÿÿÿ8ğæúûû1J$99b74eab-1c12-4f06-8df0-d490b94826c0
+q
+java:S1481ì"(Remove this unused "max" local variable.( ò¡«ûÿÿÿÿ8ğæúûû1J$c317c1e0-7a5a-4fa6-a91b-b1f5734a0de7

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="5dp"
+    android:layout_marginLeft="10dp"
     android:layout_marginTop="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginBottom="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
     android:background="@drawable/cardesign_linear_layout"
     android:gravity="center"
     android:orientation="horizontal"
@@ -35,7 +35,7 @@
             tools:layout_editor_absoluteY="10dp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:gravity="center"
@@ -52,10 +52,22 @@
                 android:id="@+id/saveService"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/baseline_save_24" />
+                android:src="@drawable/baseline_favorite_black_24" />
+
+            <ImageView
+                android:id="@+id/deleteSavedService"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_delete_24"
+                android:visibility="invisible"/>
 
         </LinearLayout>
-
+        <ImageView
+            android:id="@+id/quickOfferButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_check_circle_24" />
 
     </LinearLayout>
 
@@ -89,6 +101,16 @@
             android:text="Hizmet Adı"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="76dp" />
+        <TextView
+            android:id="@+id/serviceField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hizmet Alanı"
+            android:textSize="11sp"
+            android:textStyle="normal|bold"
             android:layout_marginBottom="10dp"
             tools:layout_editor_absoluteX="197dp"
             tools:layout_editor_absoluteY="76dp" />

@@ -1,0 +1,5 @@
+
+W	java:S107"BConstructor has 10 parameters, which is greater than 7 authorized.(ÔÙÎ•
+V	java:S107'"AConstructor has 9 parameters, which is greater than 7 authorized.(ä¾…£
+P
+java:S1128"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ

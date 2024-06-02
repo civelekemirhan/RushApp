@@ -1,0 +1,24 @@
+
+µ
+java:S1319&"mThe type of "savedCardList" should be an interface such as "List" rather than the implementation "ArrayList".(Øì×¡şÿÿÿÿ8Õ•–÷û1J$fd97cd69-5241-4655-af62-1c1389721d12
+p
+java:S1604I"(Make this anonymous inner class a lambda(Ôò×üÿÿÿÿ8œ½¯†û1J$cd5b51c7-5bf0-4f84-8e29-b02d91496b77
+p
+java:S1604E"(Make this anonymous inner class a lambda(é‘ù×ùÿÿÿÿ8äò†û1J$76be6f73-e0c2-423b-838a-c4bf005ac446
+p
+java:S1604W"(Make this anonymous inner class a lambda(“´¢Ìøÿÿÿÿ8æò†û1J$501c163c-2b56-4d82-ad42-017ce1d24e1f
+p
+java:S1604c"(Make this anonymous inner class a lambda(ğáÿ®ıÿÿÿÿ8æò†û1J$5bcf51d7-a1dc-448f-90ef-3132d5c67ea1
+j
+java:S1604^"(Make this anonymous inner class a lambda(÷Â×W8æò†û1J$5fbd3c7f-f777-44da-8c29-2faafabf1f9b
+p
+java:S1604~"(Make this anonymous inner class a lambda(ğáÿ®ıÿÿÿÿ8æò†û1J$72dc73db-3342-44fa-b306-6301fd0f1056
+p
+java:S1604z"(Make this anonymous inner class a lambda(Êôûşÿÿÿÿ8æò†û1J$de9e888c-1642-445b-9298-651aae57af45
+d
+java:S11167"Remove this empty statement.(Åñ­õşÿÿÿÿ8çñÓüû1J$1c77959d-2f97-46b0-8279-c26d4637f668
+Ä
+java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡é††8ºó†û1J$ec8b068b-f9d4-48d2-9400-64c5cbcfb6fc
+„	java:S125ƒ"<This block of commented-out lines of code should be removed.(±Ôåêşÿÿÿÿ8¿ó†û1J$8ed12e04-bcdf-4519-bfe5-0a7de79c95c9
+{
+java:S1068#"8Remove this unused "bottomNavigationView" private field.(ê¥ÎÚ8¡ÿ¬†û1J$f5f84ed8-6fff-48a5-bd89-39bd7417e360

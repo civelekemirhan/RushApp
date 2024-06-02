@@ -45,8 +45,8 @@ public class SplashScreen extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
+        //En tepede FragmentSplashScreenBinding binding; şeklinde tanımladık
         binding=FragmentSplashScreenBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
@@ -56,6 +56,8 @@ public class SplashScreen extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Animation topAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.top_animation);
         Animation bottomAnim = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.bottom_animation);
+
+
         binding.appLogo.setAnimation(topAnim);
         binding.appName.setAnimation(bottomAnim);
 
@@ -65,9 +67,9 @@ public class SplashScreen extends Fragment {
 
                 if(mAuth.getCurrentUser()!=null){
 
-                    DBOperations dbo=new DBOperations();
 
-                    dbo.getUserCustomerInformation(new OnUserIsCustomerInformationCallback() {
+
+                    DBOperations.getUserCustomerInformation(new OnUserIsCustomerInformationCallback() {
                         @Override
                         public void onComplete(boolean isCustomer) {
                             if(isCustomer){
@@ -79,10 +81,7 @@ public class SplashScreen extends Fragment {
                             }
                         }
 
-                        @Override
-                        public void onFailure(Exception e) {
 
-                        }
                     });
                 }else{
                     NavDirections action = SplashScreenDirections.actionSplashScreenToLoginScreen2();

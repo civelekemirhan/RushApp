@@ -83,8 +83,8 @@ public class LoginScreen extends Fragment {
 
                 if(!loginMail.equals("") && !loginPass.equals("")){
 
-                    DBOperations dbo=new DBOperations();
-                    dbo.loginSystem(loginMail,loginPass, getContext(), new LoginCallback() {
+
+                    DBOperations.loginSystem(loginMail,loginPass, getContext(), new LoginCallback() {
                         @Override
                         public void onLoginSuccess(boolean isCustomer) {
                             binding.loginButton.setEnabled(false);
@@ -95,13 +95,9 @@ public class LoginScreen extends Fragment {
                                 NavDirections action=LoginScreenDirections.actionLoginScreenToProviderPage();
                                 Navigation.findNavController(view).navigate(action);
                             }
-
-
                         }
-
                         @Override
                         public void onLoginFailure() {
-
                         }
                     });
 

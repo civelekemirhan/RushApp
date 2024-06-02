@@ -1,0 +1,13 @@
+
+k
+java:S1604¢"(Make this anonymous inner class a lambda(Ì¨Ü18†¨äÓû1J$1550f9e7-90c4-4c59-afa4-a3ae20be6831
+Ê
+java:S1186€"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½Ä³ïþÿÿÿÿ8Œ©äÓû1J$e7248a48-311f-4664-9982-dad9c3217937
+Å
+java:S1186…"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ž¦›Í8Œ©äÓû1J$3cf80131-4b70-480b-9303-69bbbb531b27
+–
+java:S3776”"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¼¹ú©8š©äÓû1J$f6137baa-a9e8-438d-a3ff-34c6c54529af
+u
+java:S2440ï",Remove this instantiation of "DBOperations".(Þ‹¤Õûÿÿÿÿ8Î©äÓû1J$38433fbb-4e59-4c09-bcc8-aa770739fbe2
+~
+java:S2209ð"5Change this instance-reference to a static reference.(šÿ½Êþÿÿÿÿ8Ó©äÓû1J$a55ac6fb-c3dd-436c-8477-1d8d06d593f2

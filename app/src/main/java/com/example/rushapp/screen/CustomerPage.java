@@ -18,6 +18,7 @@ import com.example.rushapp.R;
 import com.example.rushapp.callback.CustomerInfoCallback;
 import com.example.rushapp.data.db.DBOperations;
 import com.example.rushapp.data.model.Customer;
+import com.example.rushapp.databinding.FragmentCustomerPageBinding;
 
 
 public class CustomerPage extends Fragment{
@@ -47,7 +48,8 @@ public class CustomerPage extends Fragment{
     @Override
     public void onResume() {
         super.onResume();
-        replaceFragment(new UniversalHomeScreen());
+        binding.bottomNavigationView.setSelectedItemId(R.id.home);
+
     }
 
     @Override
@@ -63,8 +65,8 @@ public class CustomerPage extends Fragment{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        DBOperations dbo=new DBOperations();
-        dbo.getCustomerInformation(new CustomerInfoCallback(){
+
+        DBOperations.getCustomerInformation(new CustomerInfoCallback(){
 
             @Override
             public void onCustomerReceived(Customer customer) {
@@ -74,11 +76,11 @@ public class CustomerPage extends Fragment{
                     if (item.getItemId() == R.id.home) {
                         replaceFragment(new UniversalHomeScreen());
                     }else if(item.getItemId() == R.id.savesService){
-                        replaceFragment(new UniversalSavesScreen());
+                        replaceFragment(new UniversalSavesScreen(binding.bottomNavigationView));
                     }else if(item.getItemId() == R.id.pastchat){
-                        replaceFragment(new UniversalChatScreen());
+                        replaceFragment(new UniversalChatScreen(binding.bottomNavigationView));
                     }else{
-                        replaceFragment(new CustomerProfileScreen(customer.getMail(),customer.getName(),customer.getJob(),item));
+                        replaceFragment(new CustomerProfileScreen(customer,item));
                     }
 
                     return true;
